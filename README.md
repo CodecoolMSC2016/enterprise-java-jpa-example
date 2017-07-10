@@ -4,7 +4,9 @@ Follow the instructions **point by point**, run the code and **check the results
 
 ### Exercises
 
-1. Create a PostgreSQL database `jpaexampleDB` and modify DB username and password in `resources/META-INF/persistence.xml`.
+1. Create a MySQL database called `jpaexampleDB` and modify DB username and password in `resources/META-INF/persistence.xml`.
+1. Create a MySQL database called `jpaexampleDB`.
+1. Did you create it? Watch out for letter case.
 1. Start `JPAExample`. `Student` and `Address` are annotated with `@Entity`, so if you check the database you should see two tables created by Hibernate.
 1. Use the `@Column` annotation to modify the default O-R mapping! Change the column name for attribute `zipcode` to `Zip`, limit its length to 4, and set the `email` field to `UNIQUE` and `NOT NULL`!
 1. It is not needed to persist `age` of students since it is calculated from `dateOfBirth` - exclude it from the table by marking it `@Transient`.
